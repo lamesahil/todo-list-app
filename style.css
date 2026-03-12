@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: #3b3f47;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:390px;
+    text-align: center;
+}
+h1{
+    color: rgb(241, 236, 236);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+input[type="text"]{
+    padding: 13px;
+    font-size: 1rem;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0 0 3px 1px  #3ea0bc;
+}
+button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3ea0bc;
+    color: #282c34;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+button:hover{
+    background-color: #2e8b9d;
+    transform: translateY(-5px);
+}
+ul{
+    color: rgb(241, 236, 236);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    
+}
+li{
+    background-color: #4a4f57;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.delete-btn{
+    text-align: right;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.delete-btn:hover{
+    background-color: #c0392b;
+    transform: translateX(-3px);
+}
+#clearAllButton{
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+#clearAllButton:hover{
+    background-color: #c0392b;
+    transform: translateY(-5px);
+}
+
+.edit-btn{
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.edit-btn:hover{
+    background-color: #d35400;
+    transform: translateX(3px);
+}
